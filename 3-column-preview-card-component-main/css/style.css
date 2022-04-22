@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--Very-light-gray);
+  font-size: 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: var(--Very-light-gray);
+  border: 0.2rem solid var(--Very-light-gray);
+  padding: 1.2rem 2.5rem;
+  border-radius: 5rem;
+  text-transform: capitalize;
+  font-family: "Lexend Deca", sans-serif;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  margin: auto;
+  width: 76rem;
+}
+
+.car-type {
+  padding: 4rem;
+}
+
+.car-type img {
+  margin-bottom: 2rem;
+}
+
+.car-type h2 {
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--Very-light-gray);
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.car-type p {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--Transparent-white);
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin-bottom: 8rem;
+}
+
+.car-type.sedan {
+  background: var(--Bright-orange);
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+.car-type.sedan button {
+  color: var(--Bright-orange);
+}
+
+.car-type.suv {
+  background: var(--Dark-cyan);
+}
+
+.car-type.suv button {
+  color: var(--Dark-cyan);
+}
+
+.car-type.luxury {
+  background: var(--Very-dark-cyan);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.car-type.luxury button {
+  color: var(--Very-dark-cyan);
+}
+.car-type button:hover {
+  background-color: transparent;
+  color: var(--Very-light-gray);
+  transition: all ease 0.5s;
+}
+
+footer {
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  main {
+    flex-direction: column;
+    width: 30rem;
+    margin: 1rem auto;
+  }
+  .car-type p {
+    margin-bottom: 4rem;
+  }
+
+  .car-type.sedan {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .car-type.luxury {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+}

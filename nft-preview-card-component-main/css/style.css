@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+  --main-BG: hsl(217, 54%, 11%);
+  --card-BG: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--main-BG);
+  font-size: 1.8rem;
+}
+a {
+  color: var(--White);
+}
+
+a:hover {
+  color: var(--Cyan);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  margin: auto 1rem;
+  background: var(--card-BG);
+  max-width: 325px;
+  padding: 1.8rem;
+  border-radius: 1.8rem;
+}
+
+.card .img {
+  display: flex;
+  justify-content: center;
+  background-color: var(--Cyan);
+  background-image: url(../images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.card .img img {
+  opacity: 1;
+  width: 100%;
+  border-radius: 1rem;
+}
+.card .img:hover img {
+  opacity: 0.3;
+}
+
+.card main h2 {
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.card main > p {
+  color: var(--Soft-blue);
+  font-weight: 300;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.card main .value {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.card main .value .price,
+.card main .value .time-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.card main .value .price {
+  color: var(--Cyan);
+}
+.card main .value .time-left {
+  color: var(--Soft-blue);
+}
+
+.card footer {
+  margin-top: 1rem;
+  border-top: 0.1rem solid var(--line);
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.card footer img {
+  height: 3rem;
+  border: 0.1rem solid var(--White);
+  border-radius: 50%;
+  margin-top: 1rem;
+}
+.card footer p {
+  color: var(--Soft-blue);
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+footer.attribution {
+  width: 100%;
+  text-align: center;
+  color: var(--White);
+  font-size: 1.8rem;
+}
