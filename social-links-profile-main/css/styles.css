@@ -38,15 +38,17 @@ body {
 
 .social-card {
   background-color: var(--gray-700);
-  border-radius: 5px;
+  border-radius: 10px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
   gap: 1rem;
+  width: 32rem;
 
   padding: 2rem;
+  margin-inline: 2rem;
 }
 
 .profile {
