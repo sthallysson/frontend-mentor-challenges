@@ -12,6 +12,8 @@
 }
 
 body {
+  color: #fff;
+  background-color: #001523;
   min-height: 100vh;
   width: 100%;
   max-width: 1024px;
@@ -29,14 +31,16 @@ a {
 }
 
 h1 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 700;
+  text-align: center;
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .project-list {
@@ -57,10 +61,6 @@ li {
   transition: transform 0.3s ease-in-out;
 }
 
-li:hover {
-  transform: scale(1.2);
-}
-
 li a {
   display: flex;
   flex-direction: column;
@@ -71,6 +71,7 @@ li p {
   font-weight: 600;
   padding-block: 2rem;
   flex: 1;
+  background-color: #002945;
 }
 
 li img {
@@ -113,6 +114,11 @@ footer a:hover {
   }
 
   h2 {
+    text-align: left;
     font-size: 1.8rem;
+  }
+
+  li:hover {
+    transform: scale(1.2);
   }
 }

@@ -14,7 +14,7 @@ projects.map((projectName, idx) => {
   const listItem = document.createElement("li");
 
   listItem.innerHTML = `
-    <a href="/${projectName}/index.html">
+    <a href="/${projectName}/index.html" target="_blank">
             <img
               src="/${projectName}/design/desktop-design.jpg"
               alt="${projectName}"
