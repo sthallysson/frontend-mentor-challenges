@@ -6,6 +6,7 @@ const projects = [
   "social-links-profile-main",
   "social-proof-section-master",
   "stats-preview-card-component-main",
+  "recipe-page-main",
 ];
 
 const projectList = document.querySelector(".project-list");
