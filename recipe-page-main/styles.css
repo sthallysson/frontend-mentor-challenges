@@ -65,15 +65,25 @@ h2 {
 }
 
 .main__preparation {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
   background-color: var(--rose-white);
   padding: 1.5rem;
   border-radius: 10px;
+
+  & .preparation__title {
+    margin-bottom: 0.5rem;
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
 
 .preparation__title {
+  font-size: 1.2rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
   color: var(--dark-raspberry);
 }
 
@@ -105,6 +115,9 @@ h2 {
 
 .section ul {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .section ul > li {
@@ -118,6 +131,9 @@ h2 {
 }
 
 .instructions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   padding: 1.5rem;
 }
 
